@@ -1,11 +1,13 @@
 @charset "utf-8";
 /* CSS Document */
 
+@import url('https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i&subset=latin-ext');
+
 body,td,th,p{
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 10pt;
+	font-family: Lato, sans-serif;
+	font-size: 12pt;
 	color: #333;
-	line-height: 1.5;
+	line-height: 1.7;
 }
 body {
 	background-color: #fdfdfd;
@@ -72,7 +74,7 @@ nav h1 a {
     background-color: #eee;
     font-size: 17px;
     margin: 0;
-    width: calc(50% - 80px);
+    width: calc(100% - 80px);
 }
 
 /* Display list items side by side */
@@ -280,20 +282,130 @@ nav h1 a {
   color: #666;
 }
 
+
 /*===============================MEDIA QUERY==============================================*/
 
-@media screen and (max-width: 444px) {
-	#restaurants-list li {
-		margin: 15px auto;
-		margin-top: 50px;
+
+@media screen and (max-width: 396px) {
+
+	nav h1 {
+		padding-top: 0;
 	}
 
 }
 
-@media screen and (min-width: 445px) {
+
+
+@media screen and (max-width: 444px) {
+	#restaurants-list li {
+		margin-top: 50px;
+	}
+	
+	td {
+		font-size: 1em;
+	}
+	
+	#restaurants-list {
+		padding-top: 100px;
+	}
+	
+
+}
+
+@media screen and (max-width: 799px) {
+	#map-container1 {
+		width: 100%;
+	}
+}
+
+@media screen and (min-width: 320px) {
 
 	#restaurants-list li {
 		margin: 15px auto;
 	}
+	
+	#maincontent {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	
+	#map-container {
+		width: 100%!important;
+		height: 500px!important;
+		position: absolute!important;
+	}
+	
+	#restaurant-container {
+		padding-top: 600px;
+		width: 100%;
+		text-align: center;
+	
+	}
+	
+	#restaurant-cuisine {
+		width: 100%;
+	}
 
+	#restaurant-hours {
+		width: 70%;
+		margin: 30px auto;
+		text-align: left;
+	}
+	
+	#reviews-container h2 {
+		text-align: center;
+	}
+	
+	#restaurant-hours td {
+		font-size: 1em;
+	}
+	
+	#reviews-list li {
+		margin: 30px auto;
+		padding-top: 30px;
+	}
+	
+	#reviews-container {
+		margin: 0 auto;
+		width: 90%;
+	}
+	
+}
+
+@media screen and (min-width: 800px) {
+	#maincontent {
+		display: inline-block;
+	}
+	
+	
+	#map-container {
+		width: 50%!important;
+		height: 87%!important;
+		position: fixed!important;
+	}
+	
+	#restaurant-container {
+		width: 50%;
+		text-align: center;
+		padding: 0;
+	
+	}
+	
+	#restaurant-address {
+		font-size: 1.6em;
+		color: #777777;
+		font-weight: bold;
+	}
+	
+	#restaurant-hours {
+		width: 50%;
+		margin: 30px auto;
+		text-align: left;
+	}
+	
+		#reviews-container {
+		margin: 0;
+		width: 50%;
+		padding: 2%;
+	}
 }
