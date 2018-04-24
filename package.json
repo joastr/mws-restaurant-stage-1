@@ -1,0 +1,26 @@
+{
+  "name": "js-mws-restaurant-stage-1",
+  "version": "1.0.0",
+  "description": "grunt implementation",
+  "main": "sw.js",
+  "scripts": {
+    "test": "js-repo"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joastr/mws-restaurant-stage-1.git"
+  },
+  "keywords": [
+    "grunt"
+  ],
+  "author": "among others joastr",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joastr/mws-restaurant-stage-1/issues"
+  },
+  "homepage": "https://github.com/joastr/mws-restaurant-stage-1#readme",
+  "devDependencies": {
+    "grunt": "^1.0.2",
+    "grunt-contrib-imagemin": "^2.0.1"
+  }
+}

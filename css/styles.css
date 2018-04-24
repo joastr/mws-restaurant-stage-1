@@ -148,13 +148,15 @@ nav h1 a {
 }
 #restaurants-list li {
   background-color: #fff;
-  border: 2px solid #ccc;
-  font-family: Arial,sans-serif;
+  border: none;
+  font-family: Lato,sans-serif;
   margin: 15px;
   min-height: 380px;
   padding: 0 30px 25px;
   text-align: left;
   width: 270px;
+  box-shadow: 9px 9px 24px 0px rgba(204,204,204,1);
+  
 }
 #restaurants-list .restaurant-img {
   background-color: #ccc;
@@ -276,6 +278,7 @@ nav h1 a {
   padding: 0 20px 20px;
   position: relative;
   width: 85%;
+  box-shadow: 9px 9px 24px 0px rgba(204,204,204,1);
 }
 #reviews-list li p {
   margin: 0 0 10px;
