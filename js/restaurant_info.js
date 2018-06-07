@@ -64,9 +64,7 @@ fillRestaurantHTML = (restaurant = self.restaurant) => {
 
   const cuisine = document.getElementById('restaurant-cuisine');
   cuisine.innerHTML = restaurant.cuisine_type;
-  
-  const googleMap = document.getElementById('map');
-  googleMap.setAttribute('tabindex','-1');
+ 
 
   // fill operating hours
   if (restaurant.operating_hours) {

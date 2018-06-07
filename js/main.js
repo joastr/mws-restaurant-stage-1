@@ -164,9 +164,6 @@ createRestaurantHTML = (restaurant) => {
   more.setAttribute('aria-label', `More details of ${restaurant.name}`)
   li.append(more)
   
-  const googleMap = document.getElementById('map');
-  googleMap.setAttribute('tabindex','-1');
-
   return li
 }
 
